@@ -1,0 +1,11 @@
+C:\Users\ritos\Documents\NetCore\BankTransactions\src\Services\TransactionsApi\bin\Debug\netcoreapp2.0\TransactionsApi.deps.json
+C:\Users\ritos\Documents\NetCore\BankTransactions\src\Services\TransactionsApi\bin\Debug\netcoreapp2.0\TransactionsApi.runtimeconfig.json
+C:\Users\ritos\Documents\NetCore\BankTransactions\src\Services\TransactionsApi\bin\Debug\netcoreapp2.0\TransactionsApi.runtimeconfig.dev.json
+C:\Users\ritos\Documents\NetCore\BankTransactions\src\Services\TransactionsApi\bin\Debug\netcoreapp2.0\TransactionsApi.dll
+C:\Users\ritos\Documents\NetCore\BankTransactions\src\Services\TransactionsApi\bin\Debug\netcoreapp2.0\TransactionsApi.pdb
+C:\Users\ritos\Documents\NetCore\BankTransactions\src\Services\TransactionsApi\obj\Debug\netcoreapp2.0\TransactionsApi.csprojAssemblyReference.cache
+C:\Users\ritos\Documents\NetCore\BankTransactions\src\Services\TransactionsApi\obj\Debug\netcoreapp2.0\TransactionsApi.csproj.CoreCompileInputs.cache
+C:\Users\ritos\Documents\NetCore\BankTransactions\src\Services\TransactionsApi\obj\Debug\netcoreapp2.0\TransactionsApi.AssemblyInfoInputs.cache
+C:\Users\ritos\Documents\NetCore\BankTransactions\src\Services\TransactionsApi\obj\Debug\netcoreapp2.0\TransactionsApi.AssemblyInfo.cs
+C:\Users\ritos\Documents\NetCore\BankTransactions\src\Services\TransactionsApi\obj\Debug\netcoreapp2.0\TransactionsApi.dll
+C:\Users\ritos\Documents\NetCore\BankTransactions\src\Services\TransactionsApi\obj\Debug\netcoreapp2.0\TransactionsApi.pdb

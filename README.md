@@ -38,3 +38,8 @@ Steps:
 4)  Bonus
 
     3.1 Check doc folder.
+
+5) Contact
+
+    5.1 Ricardo Toscano Cuello
+    5.2 ritoscue@gmail.com 

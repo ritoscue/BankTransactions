@@ -5,6 +5,10 @@ using System.Threading.Tasks;
 
 namespace TransactionsApi.ViewModel
 {
+    /// <summary>
+    /// Class for send only a data window  
+    /// </summary>
+    /// <typeparam name="TEntity">Any class</typeparam>
     public class PaginatedItemsViewModel<TEntity> where TEntity : class
     {
         public int PageIndex { get; private set; }

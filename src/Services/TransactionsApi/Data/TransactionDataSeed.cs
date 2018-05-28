@@ -12,7 +12,12 @@ namespace TransactionsApi.Data
 {
     public class TransactionDataSeed
     {
-        
+        /// <summary>
+        /// Save data for Transactions on database. Methods is called when there is not transaction data. 
+        /// </summary>
+        /// <param name="context"></param>
+        /// <param name="env"></param>
+        /// <returns></returns>
         public async Task SeedAsync(TransactionDbContext context, IHostingEnvironment env)
         {
             var contentRootPath = env.ContentRootPath;
@@ -27,6 +32,12 @@ namespace TransactionsApi.Data
                 await context.SaveChangesAsync();                
             }
         }
+        /// <summary>
+        /// Load Transactions from File
+        /// </summary>
+        /// <param name="contentRootPath"></param>
+        /// <param name="transactionTypeIdLookup"></param>
+        /// <returns></returns>
         private IEnumerable<TransactionItem> GetTransactionsFromFile(string contentRootPath, Dictionary<string, int> transactionTypeIdLookup)
         {
             string csvFileTransactions = Path.Combine(contentRootPath, "Files", "Transactions.csv");
@@ -61,12 +72,18 @@ namespace TransactionsApi.Data
                 return listTransaction;
             }
         }
-
+        /// <summary>
+        /// Load Transactions on database
+        /// </summary>
+        /// <returns></returns>
         private IEnumerable<TransactionItem> GetPreconfiguredTransactions()
         {
             throw new NotImplementedException();
         }
-
+        /// <summary>
+        /// Load Transaction types on database
+        /// </summary>
+        /// <returns></returns>
         private IEnumerable<TransactionType> GetPreconfiguredTransactionTypes()
         {
             return new List<TransactionType>()

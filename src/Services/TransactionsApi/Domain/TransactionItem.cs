@@ -2,6 +2,9 @@ using System;
 
 namespace TransactionsApi.Domain
 {
+    /// <summary>
+    /// Class that represent an Transaction
+    /// </summary>
     public class TransactionItem
     {
         public int Id { get; set; }

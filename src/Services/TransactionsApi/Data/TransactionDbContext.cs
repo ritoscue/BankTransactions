@@ -19,7 +19,10 @@ namespace TransactionsApi.Data
             builder.Entity<TransactionType>(ConfigureTransactionType);
             builder.Entity<TransactionItem>(ConfigureTransactionItem);
         }
-
+        /// <summary>
+        /// Custom configuration for Transaction Type
+        /// </summary>
+        /// <param name="builder"></param>
         private void ConfigureTransactionType(EntityTypeBuilder<TransactionType> builder)
         {
             builder.ToTable("TransactionType");
@@ -32,6 +35,11 @@ namespace TransactionsApi.Data
                 .IsRequired()
                 .HasMaxLength(50);
         }
+
+        /// <summary>
+        /// Custom configuration for transaction item
+        /// </summary>
+        /// <param name="builder"></param>
         private void ConfigureTransactionItem(EntityTypeBuilder<TransactionItem> builder)
         {
             builder.ToTable("Transaction");

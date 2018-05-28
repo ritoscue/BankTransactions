@@ -17,12 +17,19 @@ namespace TransactionsApi.Controllers
     public class TransactionController : Controller
     {
         private readonly TransactionDbContext _transactionContext;
-
+        /// <summary>
+        /// Constructor
+        /// </summary>
+        /// <param name="context">DbContext is received for DI</param>
         public TransactionController(TransactionDbContext context)
         {
             _transactionContext = context ?? throw new ArgumentNullException(nameof(context));
         }
-
+        /// <summary>
+        /// Save transaction on database
+        /// </summary>
+        /// <param name="transaction">Object type transaction</param>
+        /// <returns></returns>
         //POST api/[controller]/items
         [Route("items")]
         [HttpPost]
@@ -39,7 +46,11 @@ namespace TransactionsApi.Controllers
             await _transactionContext.SaveChangesAsync();
              return CreatedAtAction(nameof(GetTransactionById), new { id = item.Id }, null);
         }
-
+        /// <summary>
+        /// Get transaction by Id
+        /// </summary>
+        /// <param name="id">Id Transaction to get</param>
+        /// <returns></returns>
         [HttpGet]
         [Route("items/{id:int}")]
         public async Task<IActionResult> GetTransactionById(int id){
@@ -51,16 +62,28 @@ namespace TransactionsApi.Controllers
                 return Ok(item);
             return NotFound();
         }
-
+        /// <summary>
+        /// Get elements catalog types
+        /// </summary>
+        /// <returns></returns>
         // GET api/[controller]/TransactionTypes
         [HttpGet]
         [Route("[action]")]
-        public async Task<IActionResult> CatalogTypes()
+        public async Task<IActionResult> TransactionTypes()
         {
             var items = await _transactionContext.TransactionTypes.ToListAsync();
             return Ok(items);
         }
 
+        /// <summary>
+        /// Get transaction list by filters
+        /// </summary>
+        /// <param name="isFraud">Are transactions fraud or no?</param>
+        /// <param name="nameDest">Destination</param>
+        /// <param name="transactionDate">Transaction date</param>
+        /// <param name="pageSize"></param>
+        /// <param name="pageIndex"></param>
+        /// <returns></returns>
         // GET api/[controller]/items/isFraud/1/nameDest/null/transactionDate/null[?pageSize=3&pageIndex=10]
         [HttpGet]
         [Route("[action]/isFraud/{isFraud}/nameDest/{nameDest}/transactionDate/{transactionDate}")]

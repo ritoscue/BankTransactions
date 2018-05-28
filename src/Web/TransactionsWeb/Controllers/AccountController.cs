@@ -238,7 +238,7 @@ namespace TransactionsWeb.Controllers
             {
                 items.Add(new SelectListItem()
                 {
-                    Value = role.Id,
+                    Value = role.Name,
                     Text = role.Name
                 });
                 i++;

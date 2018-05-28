@@ -1,0 +1,12 @@
+c:\Users\ritos\Documents\NetCore\BankTransactions\src\Web\TransactionsWeb\bin\Debug\netcoreapp2.0\TransactionsWeb.deps.json
+c:\Users\ritos\Documents\NetCore\BankTransactions\src\Web\TransactionsWeb\bin\Debug\netcoreapp2.0\TransactionsWeb.runtimeconfig.json
+c:\Users\ritos\Documents\NetCore\BankTransactions\src\Web\TransactionsWeb\bin\Debug\netcoreapp2.0\TransactionsWeb.runtimeconfig.dev.json
+c:\Users\ritos\Documents\NetCore\BankTransactions\src\Web\TransactionsWeb\bin\Debug\netcoreapp2.0\TransactionsWeb.dll
+c:\Users\ritos\Documents\NetCore\BankTransactions\src\Web\TransactionsWeb\bin\Debug\netcoreapp2.0\TransactionsWeb.pdb
+c:\Users\ritos\Documents\NetCore\BankTransactions\src\Web\TransactionsWeb\obj\Debug\netcoreapp2.0\TransactionsWeb.csproj.CoreCompileInputs.cache
+c:\Users\ritos\Documents\NetCore\BankTransactions\src\Web\TransactionsWeb\obj\Debug\netcoreapp2.0\UserSecretsAssemblyInfo.cs
+c:\Users\ritos\Documents\NetCore\BankTransactions\src\Web\TransactionsWeb\obj\Debug\netcoreapp2.0\TransactionsWeb.AssemblyInfoInputs.cache
+c:\Users\ritos\Documents\NetCore\BankTransactions\src\Web\TransactionsWeb\obj\Debug\netcoreapp2.0\TransactionsWeb.AssemblyInfo.cs
+c:\Users\ritos\Documents\NetCore\BankTransactions\src\Web\TransactionsWeb\obj\Debug\netcoreapp2.0\TransactionsWeb.dll
+c:\Users\ritos\Documents\NetCore\BankTransactions\src\Web\TransactionsWeb\obj\Debug\netcoreapp2.0\TransactionsWeb.pdb
+C:\Users\ritos\Documents\NetCore\BankTransactions\src\Web\TransactionsWeb\obj\Debug\netcoreapp2.0\TransactionsWeb.csprojAssemblyReference.cache

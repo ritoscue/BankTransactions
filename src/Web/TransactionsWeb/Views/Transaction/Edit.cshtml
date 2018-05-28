@@ -1,0 +1,81 @@
+﻿@model TransactionsWeb.Models.TransactionViewModels.Transaction
+
+@{
+    ViewData["Title"] = "Edit";
+}
+
+<h2>Edit</h2>
+
+<h4>Transaction</h4>
+<hr />
+<div class="row">
+    <div class="col-md-4">
+        <form asp-action="Edit">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            <input type="hidden" asp-for="Id" />
+            <div class="form-group">
+                <label asp-for="TransactionTypeId" class="control-label"></label>
+                <input asp-for="TransactionTypeId" class="form-control" readonly="readonly" />
+                <span asp-validation-for="TransactionTypeId" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Ammount" class="control-label"></label>
+                <input asp-for="Ammount" class="form-control" readonly="readonly" />
+                <span asp-validation-for="Ammount" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="NameOrig" class="control-label"></label>
+                <input asp-for="NameOrig" class="form-control" readonly="readonly" />
+                <span asp-validation-for="NameOrig" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="OldBalanceOrig" class="control-label"></label>
+                <input asp-for="OldBalanceOrig" class="form-control" readonly="readonly" />
+                <span asp-validation-for="OldBalanceOrig" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="NewBalanceOrig" class="control-label"></label>
+                <input asp-for="NewBalanceOrig" class="form-control" readonly="readonly" />
+                <span asp-validation-for="NewBalanceOrig" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="NameDest" class="control-label"></label>
+                <input asp-for="NameDest" class="form-control" readonly="readonly"/>
+                <span asp-validation-for="NameDest" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="OldBalanceDest" class="control-label"></label>
+                <input asp-for="OldBalanceDest" class="form-control" readonly="readonly" />
+                <span asp-validation-for="OldBalanceDest" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="NewBalanceDest" class="control-label"></label>
+                <input asp-for="NewBalanceDest" class="form-control" readonly="readonly" />
+                <span asp-validation-for="NewBalanceDest" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <div class="checkbox">
+                    <label>
+                        <input asp-for="IsFraud" /> @Html.DisplayNameFor(model => model.IsFraud)
+                    </label>
+                </div>
+            </div>
+            <div class="form-group">
+                <label asp-for="TransactionDate" class="control-label"></label>
+                <input asp-for="TransactionDate" class="form-control" readonly="readonly" />
+                <span asp-validation-for="TransactionDate" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <input type="submit" value="Save" class="btn btn-default" />
+            </div>
+        </form>
+    </div>
+</div>
+
+<div>
+    <a asp-action="Index">Back to List</a>
+</div>
+
+@section Scripts {
+    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+}

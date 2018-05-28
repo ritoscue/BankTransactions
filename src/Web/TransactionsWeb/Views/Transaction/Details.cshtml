@@ -1,0 +1,78 @@
+﻿@model TransactionsWeb.Models.TransactionViewModels.Transaction
+
+@{
+    ViewData["Title"] = "Details";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>Transaction</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.TransactionTypeId)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.TransactionTypeId)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.Ammount)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.Ammount)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.NameOrig)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.NameOrig)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.OldBalanceOrig)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.OldBalanceOrig)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.NewBalanceOrig)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.NewBalanceOrig)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.NameDest)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.NameDest)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.OldBalanceDest)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.OldBalanceDest)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.NewBalanceDest)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.NewBalanceDest)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.IsFraud)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.IsFraud)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.TransactionDate)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.TransactionDate)
+        </dd>
+    </dl>
+</div>
+<div>
+    <a asp-action="Edit" asp-route-id="@Model.Id">Edit</a> |
+    <a asp-action="Index">Back to List</a>
+</div>

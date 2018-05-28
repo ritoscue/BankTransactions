@@ -1,6 +1,8 @@
 using System;
 using System.Linq;
 using System.Threading.Tasks;
+using Microsoft.AspNetCore.Authentication.JwtBearer;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 using TransactionsApi.Data;
@@ -11,6 +13,7 @@ namespace TransactionsApi.Controllers
 {
     [Produces("application/json")]
     [Route("api/Transaction")]
+    [Authorize(AuthenticationSchemes =JwtBearerDefaults.AuthenticationScheme)]
     public class TransactionController : Controller
     {
         private readonly TransactionDbContext _transactionContext;
@@ -82,7 +85,7 @@ namespace TransactionsApi.Controllers
                 .ToListAsync();
             var model = new PaginatedItemsViewModel<TransactionItem>(
                 pageIndex, pageSize, totalItems, itemsOnPage);
-            return Ok(itemsOnPage);
+            return Ok(model);
 
         }
       

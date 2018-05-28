@@ -25,3 +25,7 @@ Steps:
     3.1   Change tags TransactionsApiUrl and connectionString on file    /src/Web/TransactionsWeb/appsettings.json for Web api uri
     3.2   Open on cmd promnt this path:  /src/Web/TransactionsWeb
     3.3   Run command: dotnet run
+
+
+4)  Bonus
+    3.1 Check doc folder.
